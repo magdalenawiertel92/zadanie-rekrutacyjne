@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Task for 9bits-wizzard</title>
+  </head>
+  <body>
+    <div class="outer-wrapper">
+      <nav class="wrapper">
+        <ul class="steps">
+          <li class="step choosen active" data-number="1">
+          definition</li>
+          <li class="step" data-number="2">choose products</li>
+          <li class="step" data-number="3">exclude products</li>
+          <li class="step" data-number="4">bonus products
+            <i class="fa-solid fa-circle-info"></i>
+          </li>
+          <li class="step" data-number="5">products limits <i class="fa-solid fa-circle-info"></i></li>
+          <li class="step" data-number="6">choose clients</li>
+          <li class="step" data-number="7">exclude clients</li>
+          <li class="step" data-number="8">clients limits</li>
+          <li class="step" data-number="9">summary</li>
+        </ul>
+      </nav>
+      <div class="content-wrapper visible big-content" data-step_number="1">
+        <section class="column-wrapper ">
+          <div class="container">
+            <div class="row">
+              <span class="description">Description</span>
+              <span class="required">* is required</span>
+            </div>
+            <div class="input-row required">
+              <input type="text" class="form-box name checkValid  " placeholder="Marketing name" 
+              name='marketing'/>
+              <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <div class="input-row"> 
+              <input type="text" class="form-box big-box name checkValid " placeholder="Technical name" 
+              name='technical'/> 
+              <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <div class="input-row">
+              <textarea class="form-box big-box "  rows="5" placeholder="Description"
+              name="description"
+              ></textarea>
+              <i class="fa-solid fa-circle-info"></i>
+            </div>
+          </div>
+          <div class="container">
+            <span class="row description">Catalog promotion tutoial:</span>
+            <div class="content">
+              <span class="text"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                esse reiciendis dolorum deleniti, eligendi odit natus adipisci ab
+                nobis at ipsa ullam ratione, accusantium dolores explicabo minima
+                tempora beatae qui? Earum deleniti rem illo ad qui quibusdam,
+                voluptates eum, dicta aliquam pariatur non. Quidem maxime voluptas
+                voluptatum quod rerum error temporibus nam veritatis sint.
+                Molestiae animi voluptatum saepe hic voluptate. Officiis earum
+                quaerat blanditiis quis dolores labore iusto eius deleniti neque.
+                Molestiae quod dolore dolorem soluta perferendis rem!
+              </span>
+              <span class="text"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                esse reiciendis dolorum deleniti, eligendi odit natus adipisci ab
+                nobis at ipsa ullam ratione, accusantium dolores explicabo minima
+                tempora beatae qui? Earum deleniti rem illo ad qui quibusdam,
+                voluptates eum, dicta aliquam pariatur non. Quidem maxime voluptas
+                voluptatum quod rerum error temporibus nam veritatis sint.
+                Molestiae animi voluptatum saepe hic voluptate. Officiis earum
+                quaerat blanditiis quis dolores labore iusto eius deleniti neque.
+                Molestiae quod dolore dolorem soluta perferendis rem! 
+              </span>
+              <span class="text"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                esse reiciendis dolorum deleniti, eligendi odit natus adipisci ab
+                nobis at ipsa ullam ratione, accusantium dolores explicabo minima
+                tempora beatae qui? Earum deleniti rem illo ad qui quibusdam,
+                voluptates eum, dicta aliquam pariatur non. Quidem maxime voluptas
+                voluptatum quod rerum error temporibus nam veritatis sint.
+                Molestiae animi voluptatum saepe hic voluptate. Officiis earum
+                quaerat blanditiis quis dolores labore iusto eius deleniti neque.
+                Molestiae quod dolore dolorem soluta perferendis rem!  
+              </span>
+            </div>
+          </div>
+        </section>
+        <section class="column-wrapper">
+          <div class="container">
+            <div class="row">
+              <span class="description">Conditions</span>
+              <span class="required">* is required</span>
+            </div>
+            <div class="content form underline">
+              <div class="input-row required">
+                <select name="portal" class="form-box">
+                <option value="portal">Portal1</option>
+                <option value="portal2">Portal2</option>
+                <option value="portal3">Portal3</option>
+                </select>
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+              <div class="input-row required">
+                <select name="type" class="form-box">
+                <option value="Type">Type1</option>
+                <option value="portal2">Type2</option>
+                <option value="portal3">Type3</option>
+                </select>
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+              <div class="input-row">
+                <input type="number" class="form-box "  placeholder="Benefit  amount" name="benefit">
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+            </div>
+            <div class="content form">
+              <div class="date-container input-row required">
+              <input type="text" class="form-box " placeholder="Start date" name="start"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"/>
+              <input type="text" class="form-box" placeholder="Finish date" name="end"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"/>
+              <i class="fa-solid fa-circle-info"></i>
+              </div>
+              <div class="checkbox-section">
+              <div class="checkbox-row input-row">
+              <div class="input-container">
+                <div class="box">
+                  <input type="radio" id="bussinessPrice" class="form-box circle" name="price"
+                  value="bussiness"
+                  />
+                  <label for="bussinessConditions"  class="checkbox-text">Bussiness conditions</label>
+                </div>
+                <div class="box">
+                  <input type="radio" id="basePrice" class="form-box circle" name="price"
+                  value="base"
+                  />
+                  <label for="basePrice" class="checkbox-text">Base price 100%</label>
+                </div>
+              </div>
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+              <div class="box input-row">
+                <div class="input-container">
+                <input type="checkbox" id="otherPromotions" class="form-box circle" name="promotion"
+                value="promotion"
+                />
+                <label for="otherPromotions" class="checkbox-text">Connect with other promotions</label>
+              </div>
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+              <div class="box input-row">
+                <div class="input-container">
+                <input type="checkbox" id="backPromotion" class="form-box circle" name="back"
+                value="back"
+                />
+                <label for="backPromotion" class="checkbox-text">Back promotion</label>
+              </div>
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="content-wrapper" data-step_number="2">
+        <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta suscipit enim dolores eius eligendi minus voluptatem alias doloremque ullam reprehenderit, consequatur, inventore minima quos tenetur libero velit rerum a doloribus?
+        Unde laboriosam nam consectetur nostrum ad quae sint hic blanditiis illum rem omnis dolorem, inventore odio obcaecati non iste nulla illo aperiam debitis harum, suscipit officiis repellendus! Molestias, deleniti quo.
+        Vero quod modi, debitis illo, qui harum ad blanditiis provident beatae illum repudiandae, distinctio cum cupiditate fuga quos laudantium iure voluptatibus asperiores amet quidem quae corporis rem error tenetur. Officia.
+        Hic minus sunt nisi voluptatum dolor recusandae voluptate, consectetur ratione suscipit veritatis, unde labore quibusdam sed fugiat similique. Ducimus sint facere suscipit dignissimos deserunt nulla amet quis sequi ipsum qui?
+        Quibusdam veritatis voluptatum, cum officiis nulla esse voluptatibus magni, enim consequatur, libero dicta optio. Nihil modi cum quas veniam veritatis minus quidem iusto amet quasi! Recusandae quod eum accusantium mollitia.
+        Ipsa fugit ipsum vero, culpa nam aspernatur. Excepturi quidem incidunt, consequatur blanditiis quos, officiis, quis aliquam corrupti culpa asperiores consectetur similique quibusdam minima consequuntur? Vel repellendus nostrum unde repellat explicabo.
+        Impedit, accusamus quisquam perspiciatis, assumenda debitis possimus asperiores praesentium, cum aspernatur quae deserunt quidem ut aut quos nisi! Tempore non suscipit alias quasi maxime aspernatur qui laudantium tempora consectetur explicabo!
+        Saepe ex illo doloribus magnam velit quaerat corrupti commodi. Expedita neque veniam, sed amet, quaerat delectus eum labore repudiandae quis magnam voluptates saepe a? Deleniti sit fugiat ea reiciendis cupiditate?
+        Accusantium reprehenderit, distinctio in dignissimos quidem harum soluta cupiditate quae ab delectus asperiores ipsum repellendus non, itaque quasi esse tempore magnam ut consequatur officia laborum et unde? Adipisci, similique at!
+        Repellat deserunt reiciendis accusantium mollitia atque ut distinctio voluptatum ullam facilis dolore assumenda maiores architecto aliquam ex adipisci libero quos earum quas, amet perspiciatis veniam dicta nesciunt aut. Eaque, minima.</p>
+      </div>
+      </div>
+      <div class="content-wrapper" data-step_number="3">
+        <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta suscipit enim dolores eius eligendi minus voluptatem alias doloremque ullam reprehenderit, consequatur, inventore minima quos tenetur libero velit rerum a doloribus?
+        Unde laboriosam nam consectetur nostrum ad quae sint hic blanditiis illum rem omnis dolorem, inventore odio obcaecati non iste nulla illo aperiam debitis harum, suscipit officiis repellendus! Molestias, deleniti quo.
+        Vero quod modi, debitis illo, qui harum ad blanditiis provident beatae illum repudiandae, distinctio cum cupiditate fuga quos laudantium iure voluptatibus asperiores amet quidem quae corporis rem error tenetur. Officia.
+        Hic minus sunt nisi voluptatum dolor recusandae voluptate, consectetur ratione suscipit veritatis, unde labore quibusdam sed fugiat similique. Ducimus sint facere suscipit dignissimos deserunt nulla amet quis sequi ipsum qui?
+        Quibusdam veritatis voluptatum, cum officiis nulla esse voluptatibus magni, enim consequatur, libero dicta optio. Nihil modi cum quas veniam veritatis minus quidem iusto amet quasi! Recusandae quod eum accusantium mollitia.
+        Ipsa fugit ipsum vero, culpa nam aspernatur. Excepturi quidem incidunt, consequatur blanditiis quos, officiis, quis aliquam corrupti culpa asperiores consectetur similique quibusdam minima consequuntur? Vel repellendus nostrum unde repellat explicabo.
+        Impedit, accusamus quisquam perspiciatis, assumenda debitis possimus asperiores praesentium, cum aspernatur quae deserunt quidem ut aut quos nisi! Tempore non suscipit alias quasi maxime aspernatur qui laudantium tempora consectetur explicabo!
+        Saepe ex illo doloribus magnam velit quaerat corrupti commodi. Expedita neque veniam, sed amet, quaerat delectus eum labore repudiandae quis magnam voluptates saepe a? Deleniti sit fugiat ea reiciendis cupiditate?
+        Accusantium reprehenderit, distinctio in dignissimos quidem harum soluta cupiditate quae ab delectus asperiores ipsum repellendus non, itaque quasi esse tempore magnam ut consequatur officia laborum et unde? Adipisci, similique at!
+        Repellat deserunt reiciendis accusantium mollitia atque ut distinctio voluptatum ullam facilis dolore assumenda maiores architecto aliquam ex adipisci libero quos earum quas, amet perspiciatis veniam dicta nesciunt aut. Eaque, minima.</p>
+      </div>
+      </div>
+      <div class="content-wrapper" data-step_number="4">
+        <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta suscipit enim dolores eius eligendi minus voluptatem alias doloremque ullam reprehenderit, consequatur, inventore minima quos tenetur libero velit rerum a doloribus?
+        Unde laboriosam nam consectetur nostrum ad quae sint hic blanditiis illum rem omnis dolorem, inventore odio obcaecati non iste nulla illo aperiam debitis harum, suscipit officiis repellendus! Molestias, deleniti quo.
+        Vero quod modi, debitis illo, qui harum ad blanditiis provident beatae illum repudiandae, distinctio cum cupiditate fuga quos laudantium iure voluptatibus asperiores amet quidem quae corporis rem error tenetur. Officia.
+        Hic minus sunt nisi voluptatum dolor recusandae voluptate, consectetur ratione suscipit veritatis, unde labore quibusdam sed fugiat similique. Ducimus sint facere suscipit dignissimos deserunt nulla amet quis sequi ipsum qui?
+        Quibusdam veritatis voluptatum, cum officiis nulla esse voluptatibus magni, enim consequatur, libero dicta optio. Nihil modi cum quas veniam veritatis minus quidem iusto amet quasi! Recusandae quod eum accusantium mollitia.
+        Ipsa fugit ipsum vero, culpa nam aspernatur. Excepturi quidem incidunt, consequatur blanditiis quos, officiis, quis aliquam corrupti culpa asperiores consectetur similique quibusdam minima consequuntur? Vel repellendus nostrum unde repellat explicabo.
+        Impedit, accusamus quisquam perspiciatis, assumenda debitis possimus asperiores praesentium, cum aspernatur quae deserunt quidem ut aut quos nisi! Tempore non suscipit alias quasi maxime aspernatur qui laudantium tempora consectetur explicabo!
+        Saepe ex illo doloribus magnam velit quaerat corrupti commodi. Expedita neque veniam, sed amet, quaerat delectus eum labore repudiandae quis magnam voluptates saepe a? Deleniti sit fugiat ea reiciendis cupiditate?
+        Accusantium reprehenderit, distinctio in dignissimos quidem harum soluta cupiditate quae ab delectus asperiores ipsum repellendus non, itaque quasi esse tempore magnam ut consequatur officia laborum et unde? Adipisci, similique at!
+        Repellat deserunt reiciendis accusantium mollitia atque ut distinctio voluptatum ullam facilis dolore assumenda maiores architecto aliquam ex adipisci libero quos earum quas, amet perspiciatis veniam dicta nesciunt aut. Eaque, minima.</p></div>
+      </div>
+      <div class="content-wrapper" data-step_number="5">
+        <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta suscipit enim dolores eius eligendi minus voluptatem alias doloremque ullam reprehenderit, consequatur, inventore minima quos tenetur libero velit rerum a doloribus?
+        Unde laboriosam nam consectetur nostrum ad quae sint hic blanditiis illum rem omnis dolorem, inventore odio obcaecati non iste nulla illo aperiam debitis harum, suscipit officiis repellendus! Molestias, deleniti quo.
+        Vero quod modi, debitis illo, qui harum ad blanditiis provident beatae illum repudiandae, distinctio cum cupiditate fuga quos laudantium iure voluptatibus asperiores amet quidem quae corporis rem error tenetur. Officia.
+        Hic minus sunt nisi voluptatum dolor recusandae voluptate, consectetur ratione suscipit veritatis, unde labore quibusdam sed fugiat similique. Ducimus sint facere suscipit dignissimos deserunt nulla amet quis sequi ipsum qui?
+        Quibusdam veritatis voluptatum, cum officiis nulla esse voluptatibus magni, enim consequatur, libero dicta optio. Nihil modi cum quas veniam veritatis minus quidem iusto amet quasi! Recusandae quod eum accusantium mollitia.
+        Ipsa fugit ipsum vero, culpa nam aspernatur. Excepturi quidem incidunt, consequatur blanditiis quos, officiis, quis aliquam corrupti culpa asperiores consectetur similique quibusdam minima consequuntur? Vel repellendus nostrum unde repellat explicabo.
+        Impedit, accusamus quisquam perspiciatis, assumenda debitis possimus asperiores praesentium, cum aspernatur quae deserunt quidem ut aut quos nisi! Tempore non suscipit alias quasi maxime aspernatur qui laudantium tempora consectetur explicabo!
+        Saepe ex illo doloribus magnam velit quaerat corrupti commodi. Expedita neque veniam, sed amet, quaerat delectus eum labore repudiandae quis magnam voluptates saepe a? Deleniti sit fugiat ea reiciendis cupiditate?
+        Accusantium reprehenderit, distinctio in dignissimos quidem harum soluta cupiditate quae ab delectus asperiores ipsum repellendus non, itaque quasi esse tempore magnam ut consequatur officia laborum et unde? Adipisci, similique at!
+        Repellat deserunt reiciendis accusantium mollitia atque ut distinctio voluptatum ullam facilis dolore assumenda maiores architecto aliquam ex adipisci libero quos earum quas, amet perspiciatis veniam dicta nesciunt aut. Eaque, minima.</p></div>
+      </div>
+      <div class="content-wrapper" data-step_number="6">
+        <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta suscipit enim dolores eius eligendi minus voluptatem alias doloremque ullam reprehenderit, consequatur, inventore minima quos tenetur libero velit rerum a doloribus?
+        Unde laboriosam nam consectetur nostrum ad quae sint hic blanditiis illum rem omnis dolorem, inventore odio obcaecati non iste nulla illo aperiam debitis harum, suscipit officiis repellendus! Molestias, deleniti quo.
+        Vero quod modi, debitis illo, qui harum ad blanditiis provident beatae illum repudiandae, distinctio cum cupiditate fuga quos laudantium iure voluptatibus asperiores amet quidem quae corporis rem error tenetur. Officia.
+        Hic minus sunt nisi voluptatum dolor recusandae voluptate, consectetur ratione suscipit veritatis, unde labore quibusdam sed fugiat similique. Ducimus sint facere suscipit dignissimos deserunt nulla amet quis sequi ipsum qui?
+        Quibusdam veritatis voluptatum, cum officiis nulla esse voluptatibus magni, enim consequatur, libero dicta optio. Nihil modi cum quas veniam veritatis minus quidem iusto amet quasi! Recusandae quod eum accusantium mollitia.
+        Ipsa fugit ipsum vero, culpa nam aspernatur. Excepturi quidem incidunt, consequatur blanditiis quos, officiis, quis aliquam corrupti culpa asperiores consectetur similique quibusdam minima consequuntur? Vel repellendus nostrum unde repellat explicabo.
+        Impedit, accusamus quisquam perspiciatis, assumenda debitis possimus asperiores praesentium, cum aspernatur quae deserunt quidem ut aut quos nisi! Tempore non suscipit alias quasi maxime aspernatur qui laudantium tempora consectetur explicabo!
+        Saepe ex illo doloribus magnam velit quaerat corrupti commodi. Expedita neque veniam, sed amet, quaerat delectus eum labore repudiandae quis magnam voluptates saepe a? Deleniti sit fugiat ea reiciendis cupiditate?
+        Accusantium reprehenderit, distinctio in dignissimos quidem harum soluta cupiditate quae ab delectus asperiores ipsum repellendus non, itaque quasi esse tempore magnam ut consequatur officia laborum et unde? Adipisci, similique at!
+        Repellat deserunt reiciendis accusantium mollitia atque ut distinctio voluptatum ullam facilis dolore assumenda maiores architecto aliquam ex adipisci libero quos earum quas, amet perspiciatis veniam dicta nesciunt aut. Eaque, minima.</p></div>
+      </div>
+      <div class="content-wrapper" data-step_number="7">
+        <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta suscipit enim dolores eius eligendi minus voluptatem alias doloremque ullam reprehenderit, consequatur, inventore minima quos tenetur libero velit rerum a doloribus?
+        Unde laboriosam nam consectetur nostrum ad quae sint hic blanditiis illum rem omnis dolorem, inventore odio obcaecati non iste nulla illo aperiam debitis harum, suscipit officiis repellendus! Molestias, deleniti quo.
+        Vero quod modi, debitis illo, qui harum ad blanditiis provident beatae illum repudiandae, distinctio cum cupiditate fuga quos laudantium iure voluptatibus asperiores amet quidem quae corporis rem error tenetur. Officia.
+        Hic minus sunt nisi voluptatum dolor recusandae voluptate, consectetur ratione suscipit veritatis, unde labore quibusdam sed fugiat similique. Ducimus sint facere suscipit dignissimos deserunt nulla amet quis sequi ipsum qui?
+        Quibusdam veritatis voluptatum, cum officiis nulla esse voluptatibus magni, enim consequatur, libero dicta optio. Nihil modi cum quas veniam veritatis minus quidem iusto amet quasi! Recusandae quod eum accusantium mollitia.
+        Ipsa fugit ipsum vero, culpa nam aspernatur. Excepturi quidem incidunt, consequatur blanditiis quos, officiis, quis aliquam corrupti culpa asperiores consectetur similique quibusdam minima consequuntur? Vel repellendus nostrum unde repellat explicabo.
+        Impedit, accusamus quisquam perspiciatis, assumenda debitis possimus asperiores praesentium, cum aspernatur quae deserunt quidem ut aut quos nisi! Tempore non suscipit alias quasi maxime aspernatur qui laudantium tempora consectetur explicabo!
+        Saepe ex illo doloribus magnam velit quaerat corrupti commodi. Expedita neque veniam, sed amet, quaerat delectus eum labore repudiandae quis magnam voluptates saepe a? Deleniti sit fugiat ea reiciendis cupiditate?
+        Accusantium reprehenderit, distinctio in dignissimos quidem harum soluta cupiditate quae ab delectus asperiores ipsum repellendus non, itaque quasi esse tempore magnam ut consequatur officia laborum et unde? Adipisci, similique at!
+        Repellat deserunt reiciendis accusantium mollitia atque ut distinctio voluptatum ullam facilis dolore assumenda maiores architecto aliquam ex adipisci libero quos earum quas, amet perspiciatis veniam dicta nesciunt aut. Eaque, minima.</p></div>
+      </div>
+      <div class="content-wrapper" data-step_number="8">
+        <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta suscipit enim dolores eius eligendi minus voluptatem alias doloremque ullam reprehenderit, consequatur, inventore minima quos tenetur libero velit rerum a doloribus?
+        Unde laboriosam nam consectetur nostrum ad quae sint hic blanditiis illum rem omnis dolorem, inventore odio obcaecati non iste nulla illo aperiam debitis harum, suscipit officiis repellendus! Molestias, deleniti quo.
+        Vero quod modi, debitis illo, qui harum ad blanditiis provident beatae illum repudiandae, distinctio cum cupiditate fuga quos laudantium iure voluptatibus asperiores amet quidem quae corporis rem error tenetur. Officia.
+        Hic minus sunt nisi voluptatum dolor recusandae voluptate, consectetur ratione suscipit veritatis, unde labore quibusdam sed fugiat similique. Ducimus sint facere suscipit dignissimos deserunt nulla amet quis sequi ipsum qui?
+        Quibusdam veritatis voluptatum, cum officiis nulla esse voluptatibus magni, enim consequatur, libero dicta optio. Nihil modi cum quas veniam veritatis minus quidem iusto amet quasi! Recusandae quod eum accusantium mollitia.
+        Ipsa fugit ipsum vero, culpa nam aspernatur. Excepturi quidem incidunt, consequatur blanditiis quos, officiis, quis aliquam corrupti culpa asperiores consectetur similique quibusdam minima consequuntur? Vel repellendus nostrum unde repellat explicabo.
+        Impedit, accusamus quisquam perspiciatis, assumenda debitis possimus asperiores praesentium, cum aspernatur quae deserunt quidem ut aut quos nisi! Tempore non suscipit alias quasi maxime aspernatur qui laudantium tempora consectetur explicabo!
+        Saepe ex illo doloribus magnam velit quaerat corrupti commodi. Expedita neque veniam, sed amet, quaerat delectus eum labore repudiandae quis magnam voluptates saepe a? Deleniti sit fugiat ea reiciendis cupiditate?
+        Accusantium reprehenderit, distinctio in dignissimos quidem harum soluta cupiditate quae ab delectus asperiores ipsum repellendus non, itaque quasi esse tempore magnam ut consequatur officia laborum et unde? Adipisci, similique at!
+        Repellat deserunt reiciendis accusantium mollitia atque ut distinctio voluptatum ullam facilis dolore assumenda maiores architecto aliquam ex adipisci libero quos earum quas, amet perspiciatis veniam dicta nesciunt aut. Eaque, minima.</p></div>
+      </div>
+      <div class="content-wrapper" data-step_number="9">
+        <div class="container">
+        <button class="btn" type="submit">Zapisz</button>
+        <div class="table-container">
+          <div class="table">
+            <p class="promotion">Nazwa promocji</p>
+            <p class="promotion">Edytuj</p>
+            <p class="promotion">Usuń</p>
+            <p class="promotionName"></p>
+            <p class="promotionEdit">
+              <img src="/edit.png" alt="edit icon">
+            </p>
+            <p class="promotionDelete">
+              <img src="/bin.png" alt="delete icon">
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+  <div class="popup-container">
+    <div class="popup">
+      <p class="popup-text">Czy chcesz usunąć nazwę promocji?</p>
+      <div class="buttons"><button class="popup-btn yes">Tak, usuń</button>
+        <button class="popup-btn no">Nie</button></div>
+      
+    </div>
+  </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
